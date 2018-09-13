@@ -114,6 +114,7 @@ class DataSet:
 
 if __name__ == "__main__":
     from sys import argv
-    data = DataSet(argv[1])
+    data_file = '/home/songzhen/workspace/data/credit.data.csv'
+    data = DataSet(data_file)
     print("instances size=", len(data.instances))
     print(data.instances[1])
